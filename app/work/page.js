@@ -7,7 +7,7 @@ import "swiper/css";
 import { BsArrowUpRight, BsGithub } from "react-icons/bs";
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
 import { FaHtml5, FaCss3, FaJs, FaReact, FaFigma } from "react-icons/fa";
-import { SiTailwindcss, SiNextdotjs, SiAdobephotoshop } from "react-icons/si";
+import { SiTailwindcss, SiNextdotjs, SiAdobephotoshop, SiThreedotjs } from "react-icons/si";
 import Link from "next/link";
 import Image from "next/image";
 import WorkSliderBtns from "@/components/WorkSliderBtns";
@@ -59,6 +59,20 @@ const projects = [
   },
   {
     num: "3",
+    category: "frontend",
+    title: "Apple website",
+    description: "This project is a visually stunning and responsive web frontend designed as an Apple clone website, crafted with React, Tailwind CSS, Three.js, and GSAP animations. The platform offers a sophisticated and user-friendly interface, providing visitors with an immersive experience as they explore the site's features. Utilizing React's component-based architecture, the site ensures dynamic content updates and seamless user interactions. Tailwind CSS delivers a utility-first approach to styling, enabling rapid and customized design that mirrors Apple's clean and modern aesthetic. Three.js brings the site to life with engaging 3D graphics, while GSAP animations add fluid transitions and interactive elements. This project demonstrates the capability to develop cutting-edge web applications that are both visually captivating and highly functional, tailored to emulate the renowned Apple website experience.",
+    stack: [
+      { icon: <FaReact />, name: "react.js" },
+      { icon: <SiTailwindcss />, name: "tailwind.css" },
+      { icon: <SiThreedotjs />, name: "three.js" },
+    ],
+    image: "/assets/work/thumbnail4.png",
+    live: "https://apple-website-teal.vercel.app/",
+    github: "https://github.com/Robertino2809/apple-website",
+  },
+  {
+    num: "4",
     category: "UI/UX",
     title: "Vibes Mobile App Design",
     description: "This UI/UX design project was crafted for a Fiverr client and is centered on Vibes Mobile App, a unique social media platform where users can listen to music, buy cryptocurrency, and reward others with crypto for their musical creations. The app also features an integrated crypto wallet, enabling seamless financial transactions within the platform. The design emphasizes a user-friendly and visually engaging interface that enhances the user experience, making navigation intuitive and enjoyable. Each aspect of the app, from the music player to the crypto wallet, was meticulously designed to ensure both functionality and aesthetic appeal, providing users with a seamless and immersive experience.",
