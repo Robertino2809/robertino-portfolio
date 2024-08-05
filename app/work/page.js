@@ -29,7 +29,7 @@ const projects = [
   {
     num: "1",
     category: "full-stack",
-    title: "Print Alfa Fullstack Web Shop",
+    title: "Print Alfa Web Shop",
     description: "This project is a comprehensive Full-stack e-commerce platform developed for a graphic design company using Next.js, React, and Tailwind CSS, and served as the final project for graduation. The platform features an admin dashboard where administrators can add, remove, and edit products, add and remove categories, you can also watch all your orders. On the front end, users can browse products, add items to their cart, and complete purchases through a Stripe-integrated checkout system. The platform also includes secure user authentication for login and registration, ensuring a smooth and secure shopping experience.",
     stack: [
       { icon: <FaReact />, name: "react.js" },
@@ -61,7 +61,7 @@ const projects = [
     num: "3",
     category: "frontend",
     title: "Apple website",
-    description: "This project is a visually stunning and responsive web frontend designed as an Apple clone website, crafted with React, Tailwind CSS, Three.js, and GSAP animations. The platform offers a sophisticated and user-friendly interface, providing visitors with an immersive experience as they explore the site's features. Utilizing React's component-based architecture, the site ensures dynamic content updates and seamless user interactions. Tailwind CSS delivers a utility-first approach to styling, enabling rapid and customized design that mirrors Apple's clean and modern aesthetic. Three.js brings the site to life with engaging 3D graphics, while GSAP animations add fluid transitions and interactive elements. This project demonstrates the capability to develop cutting-edge web applications that are both visually captivating and highly functional, tailored to emulate the renowned Apple website experience.",
+    description: "This project is a visually stunning and responsive web frontend designed as an Apple clone website, crafted with React, Tailwind CSS, Three.js, and GSAP animations. The platform offers a sophisticated and user-friendly interface, providing visitors with an immersive experience as they explore the site's features. Utilizing React's component-based architecture, the site ensures dynamic content updates and seamless user interactions. Tailwind CSS delivers a utility-first approach to styling, enabling rapid and customized design that mirrors Apple's clean and modern aesthetic. Three.js brings the site to life with engaging 3D graphics, while GSAP animations add fluid transitions and interactive elements.",
     stack: [
       { icon: <FaReact />, name: "react.js" },
       { icon: <SiTailwindcss />, name: "tailwind.css" },
@@ -109,7 +109,10 @@ const Work = () => {
             <div className="flex flex-col gap-[30px]">
               <div className="text-6xl font-extrabold text-secondary">{project.num}</div>
               <div>
-                <h2 className="text-[42px] font-bold text-third group-hover:text-secondary transition-all duration-500 capitalize">
+                <h2 className="text-[32px] font-bold text-third group-hover:text-secondary transition-all duration-500 capitalize">
+                  {project.title}
+                </h2>
+                <h2 className="text-[22px] font-bold text-zinc-600 group-hover:text-secondary transition-all duration-500 capitalize mb-2">
                   {project.category} project
                 </h2>
                 <p className="text-zinc-600">{project.description}</p>
