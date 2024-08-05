@@ -39,8 +39,8 @@ const projects = [
       { icon: <SiAdobephotoshop />, name: "adobe photoshop" },
     ],
     image: "/assets/work/thumbnail1.png",
-    live: "",
-    github: "",
+    live: "https://printalfa-front.vercel.app/",
+    github: "https://github.com/Robertino2809/printalfa-front",
   },
   {
     num: "2",
