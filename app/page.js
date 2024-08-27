@@ -28,7 +28,7 @@ export default function Home() {
               <span className="text-secondary">Robertino Puhanić</span>
             </h1>
             <h2 className="h2 mb-4">Frontend developer<br /> & UI/UX designer</h2>
-            <p className="max-w-[500px] mb-4 text-third">Breathing life into ideas with captivating designs and elegant code, creating digital experiences that resonate and inspire.</p>
+            <p className="max-w-[500px] mb-4 text-third">Hello, I am Robertino, Frontend Developer and UI/UX Designer based in Croatia. 📍</p>
             {/* buttons and socials */}
             <div className="flex flex-col xl:flex-row items-center gap-8">
               <Button 
