@@ -73,6 +73,19 @@ const projects = [
   },
   {
     num: "4",
+    category: "Frontend",
+    title: "Elektro Deni website",
+    description: "This project is a visually appealing and responsive web frontend developed as a sleek, modern website using React, Tailwind CSS, and EmailJS for the contact form. Built with a component-based architecture in React, the platform ensures smooth user interactions and dynamic content updates. Tailwind CSS enables a streamlined and efficient design process, providing a utility-first approach that makes customization fast and easy. For handling contact form submissions, EmailJS is integrated to allow seamless communication without the need for a server, ensuring an intuitive user experience throughout the site.",
+    stack: [
+      { icon: <FaReact />, name: "react.js" },
+      { icon: <SiTailwindcss />, name: "tailwind.css" },
+    ],
+    image: "/assets/work/thumbnail6.png",
+    live: "https://elektro-deni.vercel.app/",
+    github: "",
+  },
+  {
+    num: "5",
     category: "UI/UX",
     title: "Foodoo Mobile App Design",
     description: "Foodoo is a dynamic app that seamlessly blends the art of healthy cooking with the convenience of meal delivery, designed to support your nutritious lifestyle. It offers a wide array of curated recipes catering to various dietary preferences, from vegetarian and vegan to gluten-free and low-carb, while also allowing you to order freshly prepared, nutrient-rich meals delivered right to your doorstep. With personalized meal planning, in-app nutrition tracking, and easy ingredient shopping, Foodoo makes it simple to maintain a balanced diet. The app also features cooking tutorials, community engagement, and tools to manage dietary restrictions, making healthy eating both accessible and enjoyable.",
@@ -85,7 +98,7 @@ const projects = [
     github: "",
   },
   {
-    num: "5",
+    num: "6",
     category: "UI/UX",
     title: "Vibes Mobile App Design",
     description: "This UI/UX design project was crafted for a Fiverr client and is centered on Vibes Mobile App, a unique social media platform where users can listen to music, buy cryptocurrency, and reward others with crypto for their musical creations. The app also features an integrated crypto wallet, enabling seamless financial transactions within the platform. The design emphasizes a user-friendly and visually engaging interface that enhances the user experience, making navigation intuitive and enjoyable. Each aspect of the app, from the music player to the crypto wallet, was meticulously designed to ensure both functionality and aesthetic appeal, providing users with a seamless and immersive experience.",
@@ -117,6 +130,7 @@ const Work = () => {
       }}
       className="min-h-[80vh] flex flex-col justify-center py-12 xl:px-0"
     >
+      {/* Project 1 */}
         <section>
           <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
             <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
@@ -173,6 +187,7 @@ const Work = () => {
             </div>
           </div>
         </section>
+        {/* Project 2 */}
         <section>
           <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
             <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
@@ -229,6 +244,7 @@ const Work = () => {
             </div>
           </div>
         </section>
+        {/* Project 3 */}
         <section>
           <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
             <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
@@ -285,18 +301,63 @@ const Work = () => {
             </div>
           </div>
         </section>
+        {/* Project 4 */}
         <section>
           <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
             <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
               <div className="lg:py-24">
-                <h2 className="text-3xl font-bold sm:text-4xl">{projects[3].title}</h2>
-                <h2 className="text-xl font-bold mt-5">{projects[3].category}</h2>
+                <h2 className="text-3xl font-bold sm:text-4xl">{projects[4].title}</h2>
+                <h2 className="text-xl font-bold mt-5">{projects[4].category}</h2>
 
                 <p className="mt-4 text-gray-600">
-                  {projects[3].description}
+                  {projects[4].description}
                 </p>
                 <div className="flex gap-6 mt-4 mb-4">
-                  {projects[3]?.stack.map((stackItem, index) => (
+                  {projects[4]?.stack.map((stackItem, index) => (
+                    <div key={index} className="text-5xl">
+                      {stackItem.icon}
+                    </div>
+                  ))}
+                </div>
+                <div className="flex items-center gap-4 mt-2">
+                  {/* live project button */}
+                  <Link href={projects[2].live}>
+                    <TooltipProvider delayDuration={100}>
+                      <Tooltip>
+                        <TooltipTrigger className="w-[50px] h-[50px] rounded-full bg-[#ebebeb] flex justify-center items-center group">
+                          <BsArrowUpRight className="text-3xl group-hover:text-secondary" />
+                        </TooltipTrigger>
+                        <TooltipContent>
+                          <p>Live project</p>
+                        </TooltipContent>
+                      </Tooltip>
+                    </TooltipProvider>
+                  </Link>
+                </div>
+              </div>
+              <div className="relative h-52 overflow-hidden rounded-lg sm:h-80 lg:order-last lg:h-full">
+                <img
+                  alt=""
+                  src="/assets/work/thumbnail4.png"
+                  className="absolute inset-0 h-full w-full object-cover"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+        {/* Project 5 */}
+        <section>
+          <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
+            <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
+              <div className="lg:py-24">
+                <h2 className="text-3xl font-bold sm:text-4xl">{projects[5].title}</h2>
+                <h2 className="text-xl font-bold mt-5">{projects[5].category}</h2>
+
+                <p className="mt-4 text-gray-600">
+                  {projects[5].description}
+                </p>
+                <div className="flex gap-6 mt-4 mb-4">
+                  {projects[5]?.stack.map((stackItem, index) => (
                     <div key={index} className="text-5xl">
                       {stackItem.icon}
                     </div>
@@ -328,18 +389,19 @@ const Work = () => {
             </div>
           </div>
         </section>
+        {/* Project 6 */}
         <section>
           <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
             <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
               <div className="lg:py-24">
-                <h2 className="text-3xl font-bold sm:text-4xl">{projects[4].title}</h2>
-                <h2 className="text-xl font-bold mt-5">{projects[4].category}</h2>
+                <h2 className="text-3xl font-bold sm:text-4xl">{projects[6].title}</h2>
+                <h2 className="text-xl font-bold mt-5">{projects[6].category}</h2>
 
                 <p className="mt-4 text-gray-600">
-                  {projects[4].description}
+                  {projects[6].description}
                 </p>
                 <div className="flex gap-6 mt-4 mb-4">
-                  {projects[4]?.stack.map((stackItem, index) => (
+                  {projects[6]?.stack.map((stackItem, index) => (
                     <div key={index} className="text-5xl">
                       {stackItem.icon}
                     </div>
@@ -347,7 +409,7 @@ const Work = () => {
                 </div>
                 <div className="flex items-center gap-4 mt-2">
                   {/* live project button */}
-                  <Link href={projects[4].live}>
+                  <Link href={projects[6].live}>
                     <TooltipProvider delayDuration={100}>
                       <Tooltip>
                         <TooltipTrigger className="w-[50px] h-[50px] rounded-full bg-[#ebebeb] flex justify-center items-center group">
