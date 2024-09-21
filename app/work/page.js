@@ -110,6 +110,18 @@ const projects = [
     live: "https://www.behance.net/gallery/204383053/Music-App",
     github: "",
   },
+  {
+    num: "7",
+    category: "Frontend",
+    title: "Fitness application",
+    description: "This project is a dynamic and responsive fitness exercises platform built with React and powered by Rapid API for data fetching. The site offers users a seamless experience, providing access to a wide range of fitness exercises and related information through an intuitive interface. Leveraging React's component-based architecture, the platform ensures real-time data updates and smooth navigation. By utilizing Rapid API, it efficiently fetches exercise data from external sources, enhancing the site's functionality and allowing users to explore and customize their fitness routines with ease.",
+    stack: [
+      { icon: <FaReact />, name: "react.js" }
+    ],
+    image: "/assets/work/thumbnail7.png",
+    live: "https://fitness-app-nine-zeta.vercel.app/",
+    github: "https://github.com/Robertino2809/fitness-app",
+  },
 ];
 
 
@@ -306,58 +318,14 @@ const Work = () => {
           <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
             <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
               <div className="lg:py-24">
-                <h2 className="text-3xl font-bold sm:text-4xl">{projects[4].title}</h2>
-                <h2 className="text-xl font-bold mt-5">{projects[4].category}</h2>
+                <h2 className="text-3xl font-bold sm:text-4xl">{projects[3].title}</h2>
+                <h2 className="text-xl font-bold mt-5">{projects[3].category}</h2>
 
                 <p className="mt-4 text-gray-600">
-                  {projects[4].description}
+                  {projects[3].description}
                 </p>
                 <div className="flex gap-6 mt-4 mb-4">
-                  {projects[4]?.stack.map((stackItem, index) => (
-                    <div key={index} className="text-5xl">
-                      {stackItem.icon}
-                    </div>
-                  ))}
-                </div>
-                <div className="flex items-center gap-4 mt-2">
-                  {/* live project button */}
-                  <Link href={projects[2].live}>
-                    <TooltipProvider delayDuration={100}>
-                      <Tooltip>
-                        <TooltipTrigger className="w-[50px] h-[50px] rounded-full bg-[#ebebeb] flex justify-center items-center group">
-                          <BsArrowUpRight className="text-3xl group-hover:text-secondary" />
-                        </TooltipTrigger>
-                        <TooltipContent>
-                          <p>Live project</p>
-                        </TooltipContent>
-                      </Tooltip>
-                    </TooltipProvider>
-                  </Link>
-                </div>
-              </div>
-              <div className="relative h-52 overflow-hidden rounded-lg sm:h-80 lg:order-last lg:h-full">
-                <img
-                  alt=""
-                  src="/assets/work/thumbnail4.png"
-                  className="absolute inset-0 h-full w-full object-cover"
-                />
-              </div>
-            </div>
-          </div>
-        </section>
-        {/* Project 5 */}
-        <section>
-          <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
-            <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
-              <div className="lg:py-24">
-                <h2 className="text-3xl font-bold sm:text-4xl">{projects[5].title}</h2>
-                <h2 className="text-xl font-bold mt-5">{projects[5].category}</h2>
-
-                <p className="mt-4 text-gray-600">
-                  {projects[5].description}
-                </p>
-                <div className="flex gap-6 mt-4 mb-4">
-                  {projects[5]?.stack.map((stackItem, index) => (
+                  {projects[3]?.stack.map((stackItem, index) => (
                     <div key={index} className="text-5xl">
                       {stackItem.icon}
                     </div>
@@ -382,6 +350,50 @@ const Work = () => {
               <div className="relative h-52 overflow-hidden rounded-lg sm:h-80 lg:order-last lg:h-full">
                 <img
                   alt=""
+                  src="/assets/work/thumbnail6.png"
+                  className="absolute inset-0 h-full w-full object-cover"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+        {/* Project 5 */}
+        <section>
+          <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
+            <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
+              <div className="lg:py-24">
+                <h2 className="text-3xl font-bold sm:text-4xl">{projects[4].title}</h2>
+                <h2 className="text-xl font-bold mt-5">{projects[4].category}</h2>
+
+                <p className="mt-4 text-gray-600">
+                  {projects[4].description}
+                </p>
+                <div className="flex gap-6 mt-4 mb-4">
+                  {projects[4]?.stack.map((stackItem, index) => (
+                    <div key={index} className="text-5xl">
+                      {stackItem.icon}
+                    </div>
+                  ))}
+                </div>
+                <div className="flex items-center gap-4 mt-2">
+                  {/* live project button */}
+                  <Link href={projects[4].live}>
+                    <TooltipProvider delayDuration={100}>
+                      <Tooltip>
+                        <TooltipTrigger className="w-[50px] h-[50px] rounded-full bg-[#ebebeb] flex justify-center items-center group">
+                          <BsArrowUpRight className="text-3xl group-hover:text-secondary" />
+                        </TooltipTrigger>
+                        <TooltipContent>
+                          <p>Live project</p>
+                        </TooltipContent>
+                      </Tooltip>
+                    </TooltipProvider>
+                  </Link>
+                </div>
+              </div>
+              <div className="relative h-52 overflow-hidden rounded-lg sm:h-80 lg:order-last lg:h-full">
+                <img
+                  alt=""
                   src="/assets/work/thumbnail5.png"
                   className="absolute inset-0 h-full w-full object-cover"
                 />
@@ -390,6 +402,50 @@ const Work = () => {
           </div>
         </section>
         {/* Project 6 */}
+        <section>
+          <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
+            <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
+              <div className="lg:py-24">
+                <h2 className="text-3xl font-bold sm:text-4xl">{projects[5].title}</h2>
+                <h2 className="text-xl font-bold mt-5">{projects[5].category}</h2>
+
+                <p className="mt-4 text-gray-600">
+                  {projects[5].description}
+                </p>
+                <div className="flex gap-6 mt-4 mb-4">
+                  {projects[5]?.stack.map((stackItem, index) => (
+                    <div key={index} className="text-5xl">
+                      {stackItem.icon}
+                    </div>
+                  ))}
+                </div>
+                <div className="flex items-center gap-4 mt-2">
+                  {/* live project button */}
+                  <Link href={projects[5].live}>
+                    <TooltipProvider delayDuration={100}>
+                      <Tooltip>
+                        <TooltipTrigger className="w-[50px] h-[50px] rounded-full bg-[#ebebeb] flex justify-center items-center group">
+                          <BsArrowUpRight className="text-3xl group-hover:text-secondary" />
+                        </TooltipTrigger>
+                        <TooltipContent>
+                          <p>Live project</p>
+                        </TooltipContent>
+                      </Tooltip>
+                    </TooltipProvider>
+                  </Link>
+                </div>
+              </div>
+              <div className="relative h-52 overflow-hidden rounded-lg sm:h-80 lg:order-last lg:h-full">
+                <img
+                  alt=""
+                  src="/assets/work/thumbnail3.png"
+                  className="absolute inset-0 h-full w-full object-cover"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+        {/* Project 7 */}
         <section>
           <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
             <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
@@ -426,7 +482,7 @@ const Work = () => {
               <div className="relative h-52 overflow-hidden rounded-lg sm:h-80 lg:order-last lg:h-full">
                 <img
                   alt=""
-                  src="/assets/work/thumbnail3.png"
+                  src="/assets/work/thumbnail7.png"
                   className="absolute inset-0 h-full w-full object-cover"
                 />
               </div>
