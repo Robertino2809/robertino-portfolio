@@ -483,7 +483,7 @@ const Work = () => {
                 <img
                   alt=""
                   src="/assets/work/thumbnail7.png"
-                  className="absolute inset-0 h-full w-full object-cover"
+                  className="absolute inset-0 h-96 lg:mt-20 w-full "
                 />
               </div>
             </div>
